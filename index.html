@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Green Scape - Mapping AQI to Sustainable Development Goals</title>
+    <style>
+        /* Global Styling */
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        body {
+            font-family: Arial, sans-serif;
+            color: #333;
+            background: #e8f5e9;
+            line-height: 1.6;
+        }
+
+        /* Header Styling */
+        header {
+            background: #4caf50;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        /* Navigation Styling */
+        nav {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            background: #66bb6a;
+            padding: 15px;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        nav a:hover {
+            color: #004d40;
+        }
+
+        /* Main Sections Styling */
+        section {
+            max-width: 1200px;
+            margin: auto;
+            padding: 40px 20px;
+            display: flex;
+            gap: 20px;
+            flex-wrap: wrap;
+            align-items: center;
+        }
+        h2 {
+            color: #2e7d32;
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+        .content {
+            max-width: 600px;
+            line-height: 1.8;
+            flex: 1;
+        }
+        .image-container {
+            flex: 1;
+            max-width: 500px;
+            border-radius: 10px;
+            overflow: hidden;
+        }
+        .image-container img {
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+        }
+
+        /* AQI Tool Styling */
+        .aqi-tool {
+            background: #e0f2f1;
+            padding: 20px;
+            border-radius: 8px;
+            max-width: 600px;
+            margin: auto;
+            text-align: center;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        select {
+            padding: 10px;
+            margin-top: 10px;
+        }
+        .aqi-result {
+            margin-top: 15px;
+            font-weight: bold;
+            color: #2e7d32;
+        }
+
+        /* Footer Styling */
+        footer {
+            background: #388e3c;
+            color: white;
+            text-align: center;
+            padding: 15px;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            section {
+                flex-direction: column;
+                text-align: center;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header Section -->
+    <header>
+        <h1>Green Scape</h1>
+        <p>Mapping Air Quality Index to Sustainable Development Goals</p>
+    </header>
+
+    <!-- Navigation Menu -->
+    <nav>
+        <a href="#introduction">Introduction</a>
+        <a href="#sdg-section">SDGs</a>
+        <a href="#air-pollution-india">Air Pollution in India</a>
+        <a href="#common-cities">Common Cities</a>
+        <a href="#reasons">Reasons for Pollution</a>
+        <a href="#diseases">Diseases Caused</a>
+        <a href="#aqi-tool">AQI Tool</a>
+    </nav>
+
+    <!-- Introduction Section -->
+    <section id="introduction">
+        <div class="content">
+            <h2>Introduction</h2>
+            <p>
+              In recent years, air pollution has become one of the most pressing environmental health challenges, impacting millions globally. Especially in a rapidly urbanizing country like India, air pollution levels frequently exceed the World Health Organization's recommended limits, leading to serious health risks, ecological damage, and economic burdens. Green Scape is dedicated to exploring these critical issues and understanding how improved air quality can help India progress toward the United Nations Sustainable Development Goals (SDGs).
+
+              Air pollution is measured through the Air Quality Index (AQI), a standardized scale that indicates how polluted the air is in any given location. This project examines the AQI across various regions in India, focusing on urban centers that are facing the most severe pollution challenges. We also delve into the causes and health impacts of air pollution, alongside potential strategies to combat it.
+              
+              To contextualize the severity of air pollution in terms of global development, this website explores how poor air quality affects multiple Sustainable Development Goals, including Good Health and Well-Being (SDG 3), Climate Action (SDG 13), and Sustainable Cities and Communities (SDG 11). By mapping AQI data to these goals, Green Scape aims to provide insights into how improving air quality not only benefits health but also contributes to long-term sustainable development.
+              
+              Through interactive tools and data visualizations, this project provides a deeper look at air quality in India. We aim to foster a greater understanding of air pollution's sources, consequences, and solutions, empowering communities to engage with the data and work towards a cleaner, healthier future for all.
+              
+              
+            </p>
+        </div>
+        <div class="image-container">
+            <img src="/assets/1.jpeg" alt="Air Pollution Image">
+        </div>
+    </section>
+
+    <section id="sdg-section" class="sdg-section">
+        <h2>Sustainable Development Goals (SDGs)</h2>
+        <p>Air quality impacts several SDGs. Let's explore how clean air is essential for sustainable development:</p>
+        <div class="sdg-list">
+            <div class="sdg">
+                <h3>Goal 3: Good Health and Well-being</h3>
+                <p>Air pollution contributes to respiratory diseases, cardiovascular issues, and other health problems.</p>
+            </div>
+            <div class="sdg">
+                <h3>Goal 11: Sustainable Cities and Communities</h3>
+                <p>Clean air supports healthier cities, reducing pollution and improving quality of life.</p>
+            </div>
+            <div class="sdg">
+                <h3>Goal 13: Climate Action</h3>
+                <p>Reducing pollutants also decreases greenhouse gases, aiding climate action efforts.</p>
+            </div>
+            <div class="sdg">
+                <h3>Goal 15: Life on Land</h3>
+                <p>Pollution affect ecosystem & biodiversity,they improving air quality or decrease in pollution can improving life on Land</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Air Pollution in India Section -->
+    <section id="air-pollution-india">
+        <div class="content">
+            <h2>Air Pollution in India</h2>
+            <p>
+              India faces one of the most severe air pollution crises in the world, with many of its cities regularly ranking among the most polluted globally. Rapid urbanization, industrial growth, and increased vehicular emissions have significantly contributed to deteriorating air quality. The Air Quality Index (AQI), which measures the concentration of pollutants like particulate matter (PM2.5 and PM10), nitrogen oxides (NOx), sulfur dioxide (SO2), carbon monoxide (CO), and ground-level ozone (O3), often reaches hazardous levels in major urban centers.
+
+              Cities like Delhi, Mumbai, Kolkata, and Bangalore grapple with poor air quality, especially during the winter months when factors such as crop residue burning, industrial emissions, and vehicle exhaust converge to create harmful smog. This pollution not only affects the health of millions, leading to respiratory and cardiovascular diseases, but also has a profound economic impact on the country, contributing to increased healthcare costs and lost productivity.
+              
+              The air pollution crisis in India is a complex challenge that requires urgent and coordinated action. Efforts to mitigate pollution include stricter emission norms, promoting electric vehicles, and implementing public awareness programs. However, more comprehensive measures are needed to safeguard the health and well-being of the population and achieve long-term sustainability.              
+            </p>
+        </div>
+        <div class="image-container">
+            <img src="/assets/2.jpeg" alt="Smoggy Cityscape">
+        </div>
+    </section>
+
+    <!-- Air Pollution in Common Cities Section -->
+    <section id="common-cities">
+        <div class="content">
+            <h2>Air Pollution in Common Indian Cities</h2>
+            <p>
+                Air pollution has become an alarming issue across India, affecting cities differently based on local sources, geography, and climate conditions. Some cities are more heavily impacted, experiencing severe pollution levels that affect millions of residents daily. Below is a closer look at air quality challenges in five prominent Indian cities: Delhi, Mumbai, Kolkata, Bangalore, and Chennai.
+            </p>
+            <br>
+            <h3>Delhi</h3>
+            <p>
+                Delhi, the capital of India, faces some of the worst air pollution levels globally, especially during the winter months. Key sources include vehicular emissions, industrial activities, and seasonal crop residue burning from neighboring states like Punjab and Haryana. The city's air quality often crosses hazardous levels, affecting millions and resulting in widespread respiratory and cardiovascular health issues.
+            </p>
+            <br>
+            <h3>Mumbai</h3>
+            <p>
+                Mumbai, known as India financial capital, experiences moderate to high air pollution due to vehicular emissions, industrial zones, and continuous construction activities. While its coastal location sometimes helps in dispersing pollutants, the city still suffers from elevated AQI levels that contribute to respiratory ailments and reduced quality of life.
+            </p>
+            <br>
+            <h3>Kolkata</h3>
+            <p>
+                Kolkata, one of India's oldest and most densely populated cities, struggles with air quality due to heavy traffic, outdated vehicles, industrial activities, and biomass burning. The presence of coal-fired power plants in nearby areas also impacts the citys air quality, leading to an increased risk of respiratory and cardiovascular diseases among residents.
+            </p>
+            <br>
+            <h3>Bangalore</h3>
+            <p>
+                Bangalore, traditionally known for its greenery and mild climate, has seen rising pollution levels due to rapid urbanization and an increase in vehicular traffic. Construction dust and industrial emissions also contribute to the worsening air quality. This pollution has led to respiratory issues and a decline in air quality, impacting the city’s well-being.
+            </p>
+            <br>
+            <h3>Chennai</h3>
+            <p>
+                Chennai faces moderate air pollution, primarily due to vehicular emissions, industrial activity, and thermal power plants. Waste burning in some areas also contributes to pollution. The city’s residents, especially vulnerable groups, experience respiratory and cardiovascular issues linked to air quality.
+            </p>
+        </div>
+        <div class="image-container">
+            <img src="assets/India_Smog_pollution_Delhi.0.jpg">
+        </div>
+    </section>
+
+    <!-- Reasons for Pollution Section -->
+    <section id="reasons">
+        <div class="content">
+            <h2>Reasons for Air Pollution</h2>
+            <p><strong>Vehicular Emissions:</strong> The rapid increase in vehicle ownership in India, fueled by urbanization and population growth, has significantly contributed to air pollution, especially in large cities. Most vehicles emit pollutants like carbon monoxide (CO), nitrogen oxides (NOx), volatile organic compounds (VOCs), and particulate matter (PM). These pollutants, particularly fine particulate matter (PM2.5), can penetrate deeply into the lungs and bloodstream, posing health risks for the population. In older vehicles or those with outdated emission control technologies, pollutant emissions are even higher, exacerbating the issue. Traffic congestion worsens emissions, as idling vehicles continue to release pollutants even while stationary.
+
+                Vehicular emissions contribute to smog formation, which can reduce visibility and create health risks for urban populations. High levels of carbon monoxide affect the amount of oxygen that red blood cells can transport through the body, leading to respiratory and cardiovascular issues. The presence of nitrogen oxides and VOCs in the atmosphere can react with sunlight to form ground-level ozone, a component of smog that irritates the respiratory system and exacerbates conditions like asthma. Addressing vehicular pollution requires cleaner fuel alternatives, efficient public transport systems, and stricter emission standards.</p><br>
+            <p><strong>Industrial Activities:</strong> Industrial activities across India are a significant source of air pollution, emitting harmful substances like sulfur dioxide (SO2), nitrogen oxides (NOx), carbon monoxide, and particulate matter. Industries such as steel, cement, chemical processing, and thermal power generation rely on heavy fossil fuel consumption, leading to high emissions of pollutants. Many factories and power plants lack adequate emission controls, causing pollutants to enter the atmosphere in large quantities. The concentration of industries near urban areas means that emissions from these activities have a direct impact on city air quality, affecting the health of residents in nearby areas.
+
+                The pollutants released from industrial activities not only degrade air quality but also contribute to acid rain, which damages crops, water sources, and soil quality. Industrial emissions have long-term effects on public health, with workers in such areas and residents living close to industrial zones facing higher rates of respiratory and cardiovascular illnesses. Industrial air pollution also has economic consequences, increasing healthcare costs and decreasing worker productivity. To mitigate these effects, stronger pollution control technologies and policies for emission reductions in industrial areas are essential.</p><br>
+            <p><strong>Agricultural Practices:</strong> Crop burning, particularly in North Indian states like Punjab and Haryana, is a significant seasonal contributor to air pollution. After the rice harvest, farmers often burn the leftover stubble to quickly prepare their fields for the next planting season, usually wheat. This process releases a large amount of smoke, containing particulate matter (PM), carbon monoxide (CO), and greenhouse gases like methane (CH4) and carbon dioxide (CO2), which contribute to poor air quality. When the smoke drifts over large areas, it significantly impacts nearby cities, especially Delhi and the surrounding National Capital Region (NCR), where it leads to dense smog and hazardous AQI levels.
+
+                Crop residue burning is a practice deeply rooted in agricultural schedules and socioeconomic factors. While efficient, it causes considerable environmental damage and health impacts, contributing to respiratory illnesses, eye irritation, and even cardiovascular problems. During the crop-burning season, cases of asthma and other respiratory issues increase in urban hospitals. Despite attempts to discourage crop burning through incentives and alternative methods like biomass energy projects, the practice continues due to limited resources and the need for quick field clearing by farmers. Comprehensive support for farmers in adopting sustainable practices could reduce the impact of crop burning on air quality.</p><br>
+            <p><strong>Construction Dust:</strong> The rapid expansion of urban areas in India has led to extensive construction activities, from residential buildings to infrastructure projects like roads, bridges, and public transit systems. During these activities, dust and fine particulate matter (PM10 and PM2.5) are released into the air from sources like digging, material handling, demolition, and transport. Construction dust is particularly harmful because the particles are often small enough to be inhaled and can penetrate deep into the lungs, causing or aggravating respiratory issues. Furthermore, the constant movement of vehicles on unpaved construction roads generates additional dust, worsening air quality for nearby residents.
+
+                Construction dust not only affects those near the sites but can travel across cities, degrading air quality over large areas. Prolonged exposure to dust can lead to chronic respiratory conditions, while those with pre-existing health issues, such as asthma, experience worsened symptoms. Construction-related air pollution also affects indoor air quality in nearby homes and workplaces. Implementing better dust control measures, such as water spraying, and enforcing stricter construction guidelines can help reduce the harmful impact of construction dust on urban air quality.</p><br>
+            <p><strong>Residential Heating and Cooking:</strong> In many rural and peri-urban areas of India, households rely on solid fuels like firewood, cow dung, and charcoal for cooking and heating. The combustion of these fuels releases large amounts of harmful pollutants, including carbon monoxide (CO), nitrogen oxides (NOx), sulfur dioxide (SO2), and fine particulate matter. Since these activities are often conducted indoors, residents, particularly women and children, are exposed to high concentrations of pollutants, which can result in respiratory illnesses, eye irritation, and increased susceptibility to infections. The smoke from solid fuel use contributes significantly to both indoor and outdoor air pollution in these areas.
+
+                The widespread use of solid fuels in cooking and heating is a major contributor to India’s air pollution and poses severe health risks, especially in rural households where ventilation is limited. Indoor air pollution from solid fuel combustion has been linked to chronic respiratory diseases, such as chronic obstructive pulmonary disease (COPD) and asthma, and is associated with premature deaths. Efforts to encourage the transition to cleaner energy sources, such as LPG (liquefied petroleum gas) and biogas, through government initiatives like the Pradhan Mantri Ujjwala Yojana (PMUY), are helping reduce reliance on solid fuels. However, further support and infrastructure are necessary to fully transition these communities to cleaner and healthier fuel options.</p><br>
+        </div>
+        <div class="image-container">
+            <img src="/assets/c0f51ffd-22b7-477f-ac31-21e20312b5e5" alt="Causes of Air Pollution">
+        </div>
+    </section>
+
+    <!-- Diseases Caused by Air Pollution Section -->
+    <section id="diseases">
+        <div class="content">
+            <h2>Diseases Caused by Air Pollution</h2>
+            <ul>
+                <li><strong>Respiratory Infections:</strong> Increased risks of pneumonia, bronchitis, and asthma.</li>
+                <li><strong>Cardiovascular Diseases:</strong> Higher risk of heart attacks and strokes.</li>
+                <li><strong>Cancer:</strong> Exposure to pollutants raises cancer risks.</li>
+                <li><strong>COPD:</strong> Progressive lung disease worsened by air pollution.</li>
+                <li><strong>Premature Death:</strong> Severe air pollution can lead to early mortality.</li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- AQI Interactive Tool Section -->
+    <section id="aqi-tool">
+        <div class="content">
+            <h2>Interactive AQI Tool</h2>
+            <div class="aqi-tool">
+                <label for="state-select">Select a State to View AQI:</label>
+                <select id="state-select" onchange="displayAQI()">
+                    <option value="">--Select State--</option>
+                    <option value="Delhi">Delhi</option>
+                    <option value="Mumbai">Mumbai</option>
+                    <option value="Kolkata">Kolkata</option>
+                    <option value="Chandigarh">Chandigarh</option>
+                    <option value="Bhopal">Bhopal</option>
+                </select>
+                <div class="aqi-result" id="aqi-result"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>&copy; 2024 Green Scape. All rights reserved.</p>
+    </footer>
+
+    <!-- Inline JavaScript for interactivity -->
+    <script>
+        function displayAQI() {
+            const state = document.getElementById('state-select').value;
+            const resultDiv = document.getElementById('aqi-result');
+            let aqiInfo;
+
+            switch(state) {
+                case 'Delhi':
+                    aqiInfo = "Delhi AQI: Very Unhealthy (AQI ~300)";
+                    break;
+                case 'Mumbai':
+                    aqiInfo = "Mumbai AQI: Unhealthy (AQI ~200)";
+                    break;
+                case 'Kolkata':
+                    aqiInfo = "Kolkata AQI: Moderate (AQI ~150)";
+                    break;
+                case 'Chandigarh':
+                    aqiInfo = "Chandigarh AQI: Moderate (AQI ~100)";
+                    break;
+                case 'Bhopal':
+                    aqiInfo = "Bhopal AQI: Good (AQI ~50)";
+                    break;
+                default:
+                    aqiInfo = "Please select a state to view its AQI.";
+            }
+
+            resultDiv.textContent = aqiInfo;
+        }
+    </script>
+
+</body>
+</html>
